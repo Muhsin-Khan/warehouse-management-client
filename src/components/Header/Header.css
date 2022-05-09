@@ -1,0 +1,19 @@
+.header{
+    height: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:50px ;
+    background-color: deepskyblue;
+}
+.header nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.header nav a:hover{
+    color: white;
+    
+
+}

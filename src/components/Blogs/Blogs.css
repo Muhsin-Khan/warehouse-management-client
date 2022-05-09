@@ -1,0 +1,13 @@
+.blogs-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    
+}
+
+.ans{
+    border: 1px solid gray;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 25px;
+}
