@@ -3,8 +3,8 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div className="footer-style">
-      <h4 className="text-center mt-3 mb-3">These are Answers</h4>
+    <div className="">
+      <h4 className="text-center mt-3 mb-3">Answers of the questions are given below</h4>
       <div className="blogs-container">
         <div className="ans">
           <h5>Difference between javascript and nodejs</h5>

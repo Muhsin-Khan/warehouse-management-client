@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner'
 
 const Home = () => {
   return (
-    <div className='footer-style'>
+    <div className=''>
     <Banner></Banner>
     
     </div>
