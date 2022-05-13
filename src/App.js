@@ -9,6 +9,9 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Sign Up/Signup";
 import NotFound from "./components/NotFound/NotFound";
 import AboutUs from "./components/AboutUs/AboutUs";
+import InventoryItems from "./components/Inventory Items/InventoryItems";
+import ManageItems from "./components/Manage Items/ManageItems";
+import AddItem from "./components/Add Item/AddItem";
 
 function App() {
   // const [users, setUsers] = useState([]);
@@ -47,6 +50,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route
+          path="/inventoryItems"
+          element={<InventoryItems></InventoryItems>}
+        ></Route>
+        <Route
+          path="/manageItems"
+          element={<ManageItems></ManageItems>}
+        ></Route>
+        <Route path="/addItems" element={<AddItem></AddItem>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
