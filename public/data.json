@@ -71,53 +71,103 @@
         "price": 4795.00,
         "supplier":"Big Chill"
     },
+    
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "name": "XPS 13 Laptop",
+        
+        "description": " 100% of the enclosure is sculpted by a CNC (computer numerical control) machining process. A high precision, machine-milled aluminum chassis creates an elegant design with high build quality that's stronger and stiffer than magnesium or plastic.For the black palm rest carbon fiber inspired by the aerospace industry or the arctic white woven glass fiber palm rest allow for maximum strength and minimal weight. Our design team worked tirelessly to get the details just right including carefully crafted backlighting and stain-resistant coating to prevent yellowing and staining.Superior screen: The latest Corning® Gorilla® Glass 6 is strong as well as impact and scratch resistance.",
+        "img": "imagesT/9.png",
+        "quantity": 25,
+        "price": 1619.99,
+        "supplier":"Dell"
     },
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "name": "XPS 15 Laptop",
+        "description": "Unleash the power to create: With up to the latest Intel® 11th Gen, 8 core, 16 threads i9 processor you can keep at your most demanding workloads for even longer.Effortless multitasking: Enjoy smooth Adobe filter performance with up to 64GB of memory.Faster results: The rendering of high-resolution graphics and videos accelerates with performance class NVIDIA® graphics.",
+        "img": "imagesT/10.png",
+        "quantity": 25,
+        "price": 1949.99,
+        "supplier":"Dell"
     },
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
+        "name": "eWheels EW-M51 Electric Wheelchair PowerChair, Long Range, 22” reclining captain’s chair, Blue",
+        "description": "The rear-wheel-drive EW-M51 is the largest of the EWheels Medical Power Chair family. It is capable of speeds up 5 mph using 9' front and 14' rear tires that also provide excellent traction and control. The stability suspension system ensures a smooth and steady ride. It comes standard with a 22' reclining captain's chair with a swing-away joystick. An adjustable footplate is also provided for extra comfort. For maximum support, a stability suspension system is provided to ensure a smooth and steady ride.",
+        "img": "imagesT/11.jpeg",
         "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "price": 2999.00,
+        "supplier":"Walmart"
     },
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "name": "Karman Stand-Up Power Wheelchair",
+        "description": "The Karman Power Wheelchair with Stand-Up functionality offers many health benefits previously unavailable to those in a wheelchair. By extending the body into a standing position, this chair promotes circulation, allows for optimal kidney and bladder function, and improves muscle tone. Standing also helps to prevent bone decalcification, thereby reducing the risk of osteoporosis.",
+        "img": "imagesT/12.jpg",
+        "quantity": 7,
+        "price": 11360.00,
+        "supplier":"WeelChair dot com"
     },
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "name": "MS Curve Exercise Treadmill For Gym",
+        "description": "SD Fitness Equipment establish in the year of 2015. We are the Manufacturer, Trader And Importer of Commercial Fitness Equipment, Domestic Fitness Equipment & Cardio. Based on the skills of our adroit professionals and creative workers, we bring forth an extensive range of Fitness Equipment. This product is the best solution for keeping body fit. ",
+        "img": "imagesT/13.jpg",
+        "quantity": 6,
+        "price": 1677.71,
+        "supplier":"India Mart"
     },
     {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
+        "name": "Heavy Duty Large Treadmill",
+        "description": "Heavy Duty Large Treadmill, the perfect choice for working out at a gym, leisure centre, or within the comfort of your own home. Including a super-strong frame for extra support and stability, as well as a multi-cushion shock absorbing system to help protect your joints, this running machine supports an impressive 4HP motor for unbeatable cardiovascular fitness.",
+        "img": "imagesT/14.png",
+        "quantity": 10,
+        "price": 224.45,
+        "supplier":"Hire Fitness"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
+    },
+    {
+        "name": "WET AND DRY VACUUM CLEANER NT 65/2 Tact²",
+        "description": "The Kärcher Tact² systems are ever popular as specialist systems and as all-rounders thanks to their high level of mobility and excellent performance, their solid construction and their wide range of practical design features. The NT 65/2 Tact² is supplied with the entire antistatic package as standard. The system tackles even large amounts of fine dust.",
+        "img": "imagesT/15.jpg",
+        "quantity": 20,
+        "price": 998.08,
+        "supplier":"The Karchar"
     }
     
 ]
