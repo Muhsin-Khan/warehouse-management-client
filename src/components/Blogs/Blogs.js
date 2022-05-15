@@ -16,7 +16,7 @@ const Blogs = () => {
           </ul>
           <h5>Nodejs</h5>
           <ul>
-            <li>It is an interpreter and environment for JavaScript with some specific useful libraries which JavaScript programming can use separately.</li>
+            <li>It is an interpreter and environment for JavaScript with some specific useful libraries which JavaScript programming can use separately. </li>
             <li>Node JS only run in a V8 engine which mainly used by google chrome. And javascript program which will be written under this Node JS will be always run in V8 Engine.</li>
             
           </ul>

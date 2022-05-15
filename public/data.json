@@ -63,14 +63,6 @@
         "price": 2192.31,
         "supplier":"Sony"
     },
-    {
-        "name": "30 inch RETROPOLITAN FRIDGE",
-        "description": "We loaded our Retropolitan Refrigerator with a throwback appeal, then flipped the freezer to the bottom for a style-savvy look with easy access. The Big Chill Retropolitan comes with ultimate modern performance seamlessly integrated with an iconic 50s vibe.",
-        "img": "imagesT/2.jpg",
-        "quantity": 5,
-        "price": 4795.00,
-        "supplier":"Big Chill"
-    },
     
     {
         "name": "XPS 13 Laptop",

@@ -1,19 +1,23 @@
 import React from "react";
 import "./Product.css";
 
-const Product = ({ products }) => {
-  const { img, name, description, quantity, price, supplier } = products;
+const Product = ( props ) => {
+  const { img, name, description, quantity, price, supplier } = props.p;
+  console.log(props.p)
   return (
     <div>
-      <div className="service">
+      <div className="product">
         <img className="w-100" src={img} alt="" />
-        <div className="service-info">
-          <h3>Service Name: {name}</h3>
+        <div className="product-info">
+          <h4>{name}</h4>
           <p>Description: {description}</p>
           <h6>Quantity: {quantity} </h6>
-          <h6>Supplier Name: {supplier}</h6>
+          <h6>Supplier: {supplier}</h6>
           <h5>Price: ${price}</h5>
+          
         </div>
+        <button className="w-100 mx-auto mt-3 mb-0 product-button">Update</button>
+        
       </div>
     </div>
   );
