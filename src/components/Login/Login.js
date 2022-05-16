@@ -14,9 +14,7 @@ const Login = () => {
   let from = location.state?.from?.pathname || "/;";
   const [
     signInWithEmailAndPassword,
-    user,
-    // loading,
-    // error,
+    user
   ] = useSignInWithEmailAndPassword(auth);
 
   if (user) {

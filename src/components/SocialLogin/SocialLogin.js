@@ -19,9 +19,7 @@ const SocialLogin = () => {
   if (user) {
     navigate("/home");
   }
-  //   if (loading) {
-  //     return <p>Loading...</p>;
-  //   }
+  
   return (
     <div>
       <div className="d-flex align-items-center">

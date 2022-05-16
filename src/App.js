@@ -13,7 +13,7 @@ import ManageItems from "./components/Manage Items/ManageItems";
 import AddItem from "./components/Add Item/AddItem";
 import Products from "./components/Products/Products";
 import Product from "./components/Product/Product";
-
+import RequireAuth from "./components/RequireAuth/RequireAuth";
 
 function App() {
   return (
@@ -28,15 +28,23 @@ function App() {
         ></Route>
         <Route
           path="/manageItems"
-          element={<ManageItems></ManageItems>}
+          element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
+            </RequireAuth>
+          }
         ></Route>
-        <Route path="/addItems" element={<AddItem></AddItem>}></Route>
+        <Route path="/addItems" element={
+        <RequireAuth>
+          <AddItem></AddItem>
+        </RequireAuth>
+        }></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/about" element={<AboutUs></AboutUs>}></Route>
         <Route path="/products" element={<Products></Products>}></Route>
-        <Route path='/product' element={<Product></Product>}></Route>
+        <Route path="/product" element={<Product></Product>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 

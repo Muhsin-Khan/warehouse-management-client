@@ -1,10 +1,11 @@
 import React from "react";
+import Products from "../Products/Products";
 import "./InventoryItems.css";
 
 const InventoryItems = () => {
   return (
-    <div className="inventory-items">
-      <h1>This is inventory item section...</h1>
+    <div>
+      <Products></Products>
     </div>
   );
 };
