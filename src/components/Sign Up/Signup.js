@@ -29,7 +29,7 @@ const Signup = () => {
   };
   return (
     <div className="signup-form body">
-      <h3 style={{ textAlign: "center" }}>Sign Up</h3>
+      <h3 className="mt-4 mb-3" style={{ textAlign: "center" }}>Sign Up</h3>
       <form onSubmit={handleSignup}>
         <input type="text" name="name" id="" placeholder="Your Name" />
         <input type="email" name="email" id="" placeholder="Email Address" />

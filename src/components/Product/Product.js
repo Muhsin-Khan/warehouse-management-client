@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = ( props ) => {
-  const { img, name, description, quantity, price, supplier } = props.p;
+  const { _id, img, name, description, quantity, price, supplier } = props.p;
   console.log(props.p)
   return (
     <div>
@@ -16,7 +17,10 @@ const Product = ( props ) => {
           <h5>Price: ${price}</h5>
           
         </div>
+        <Link to={"/manageInventory/"+_id}>
         <button className="w-100 mx-auto mt-3 mb-0 product-button">Update</button>
+        </Link>
+        
         
       </div>
     </div>

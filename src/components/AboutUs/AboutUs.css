@@ -1,0 +1,29 @@
+.aboutUs-title{
+    margin-top: 20px;
+}
+.about-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;  
+}
+.about-info img{
+    margin-top: 15px;
+    width: 100%;
+}
+.tech-bhandar-text{
+    text-align: justify;
+}
+.info{
+    margin-left: 30px;
+    margin-top:15px ;
+    
+}
+.tech-bhandar{
+    color: deepskyblue;
+}
+.seperator-line{
+    background-color: deepskyblue;
+}
+.feedbakc-title{
+    margin-bottom: 15px;
+}

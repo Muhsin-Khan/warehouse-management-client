@@ -32,7 +32,7 @@ const Login = () => {
   };
   return (
     <div className="container w-50 mx-auto  ">
-      <h4 className="mt-3 mb-3 text-primary text-center">Please Login</h4>
+      <h4 className="mt-3 mb-3 text-center">Please Login</h4>
       <div className="footer-style">
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
