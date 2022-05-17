@@ -9,13 +9,13 @@ import Signup from "./components/Sign Up/Signup";
 import NotFound from "./components/NotFound/NotFound";
 import AboutUs from "./components/AboutUs/AboutUs";
 import InventoryItems from "./components/Inventory Items/InventoryItems";
-import ManageItems from "./components/Manage Items/ManageItems";
 import AddItem from "./components/Add Item/AddItem";
 import Products from "./components/Products/Products";
 import Product from "./components/Product/Product";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import MyItems from "./components/My Items/MyItems";
-import ManageInventory from "./components/ManageInventory/ManageInventory";
+import Inventory from "./components/Inventory/Inventory";
+import ManageInventory from "./components/Manage Inventory/ManageInventory";
 
 function App() {
   return (
@@ -29,10 +29,10 @@ function App() {
           element={<InventoryItems></InventoryItems>}
         ></Route>
         <Route
-          path="/manageItems"
+          path="/manageInventory"
           element={
             <RequireAuth>
-              <ManageItems></ManageItems>
+              <ManageInventory></ManageInventory>
             </RequireAuth>
           }
         ></Route>
@@ -55,7 +55,11 @@ function App() {
         <Route path="/about" element={<AboutUs></AboutUs>}></Route>
         <Route path="/products" element={<Products></Products>}></Route>
         <Route path="/product" element={<Product></Product>}></Route>
-        <Route path="/manageInventory/:id" element={<ManageInventory></ManageInventory>}></Route>
+        <Route path="/inventory/:id" element={
+          <RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>
+        }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 

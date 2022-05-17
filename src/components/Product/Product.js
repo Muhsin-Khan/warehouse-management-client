@@ -17,7 +17,7 @@ const Product = ( props ) => {
           <h5>Price: ${price}</h5>
           
         </div>
-        <Link to={"/manageInventory/"+_id}>
+        <Link to={"/inventory/"+_id}>
         <button className="w-100 mx-auto mt-3 mb-0 product-button">Update</button>
         </Link>
         

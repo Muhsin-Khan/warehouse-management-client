@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
-import "./ManageItems.css";
+import "./ManageInventory.css";
 
-const ManageItems = () => {
+const ManageInventory = () => {
   const [products, setProducts] = useProducts();
 
   const handleDelete = (id) => {
@@ -23,23 +23,27 @@ const ManageItems = () => {
   };
 
   return (
-    <div className="w-50 mx-auto ">
+    <div className="container">
       <h2 className="mb-5 mt-4 text-center">Manage your Items/Products here</h2>
-      <Link to='/addItems'> <button 
-        
-        className="manage-item-button w-100 mb-5"
-      >
-        Add New Items
-      </button></Link>
-      <div className="m-5">
+      <div className="add-button">
+        <Link to="/addItems">
+          
+          <button className="add-item-button">Add New Items</button>
+        </Link>
+      </div>
+
+      <div className="m-5 manage-item">
         {products.map((p) => (
-          <dev className="" key={p._id}>
+          <dev className="manage-item-child" key={p._id}>
             <h4 className="pb-3">{p.name}</h4>
-            <img className="w-50 mb-2 ps-5" src={p.img} alt="" />
+            <img className="w-50 mt-2 ps-2 mb-3" src={p.img} alt="" />
             <br />
+            <h6>Supplier: {p.supplier} </h6>
+            <h6>Quantity: {p.quantity} </h6>
+            <h5>Price: ${p.price} </h5>
             <button
               style={{ width: "" }}
-              className="bg-danger mb-5 "
+              className="bg-danger mt-2 delete-item-button "
               onClick={() => handleDelete(p._id)}
             >
               Delete Item
@@ -47,11 +51,8 @@ const ManageItems = () => {
           </dev>
         ))}
       </div>
-      
-      
-      
     </div>
   );
 };
 
-export default ManageItems;
+export default ManageInventory;

@@ -4,6 +4,11 @@
     /* padding-bottom: 10px; */
     /* min-height: 100vh; */
     height: fit-content;
+    transition: .5s;
+}
+.product:hover{
+    transform: scale(1.03) ;
+    border: 1px solid deepskyblue;
 }
 .product h4{
     overflow: hidden;
@@ -24,18 +29,6 @@
     border-radius: 10px;
     padding: 20px;
 }
-button{
-    background-color: dodgerblue;
-    border: 0;
-    border-radius:  0px 0px 5px 5px;
-    height: 55px;
-    color: white;
-    font-weight: 500;
-    font-size: medium;
-    padding: 10px 30px;
-    margin-left: 10px;
-    
-}
 button:hover{
     background-color: goldenrod;
 }
@@ -45,4 +38,13 @@ button:hover{
 .product-button{
     position: sticky;
     top: 100%;
+
+    background-color: dodgerblue;
+    border: 0;
+    border-radius:  0px 0px 5px 5px;
+    height: 55px;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    padding: 10px 30px;
 }

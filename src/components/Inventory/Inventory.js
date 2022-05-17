@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-const ManageInventory = () => {
+const Inventory = () => {
     const {id} = useParams();
     const [item, setItem] = useState([]);
 
@@ -51,4 +51,4 @@ const ManageInventory = () => {
   )
 }
 
-export default ManageInventory
+export default Inventory
