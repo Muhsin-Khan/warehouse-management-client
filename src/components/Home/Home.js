@@ -13,11 +13,13 @@ const Home = () => {
         <InventoryItems></InventoryItems>
 
         
+          <div className="d-flex justify-content-center align-items-center">
           <Link to="/manageInventory">
             <button className="manage-inventories-button">
               Manage Inventories
             </button>
           </Link>
+          </div>
         
       </div>
     </div>

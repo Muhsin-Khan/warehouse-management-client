@@ -18,3 +18,9 @@
     
 
 }
+.signOut-button{
+    background-color: goldenrod;
+}
+.signOut-button:hover{
+    background-color: lightcoral;
+}

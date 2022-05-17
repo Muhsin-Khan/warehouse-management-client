@@ -14,19 +14,38 @@ const Inventory = () => {
     },[id, item]);
     
     // Handle Deliver Button......
+    const handleDeliveredQuantity=()=>{
+        
+        const quantity=  item.quantity-1;
+        const newQuantity= {quantity}
+        
+        fetch(`http://localhost:5000/product/${id}`,{
+            method:'PUT',
+            headers:{
+                'content-type':'application/json'
+            },
+            body: JSON.stringify(newQuantity)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            setItem(data);
+        });
+        
+    };
+    // Handle Added Quantity...
     const handleUpdateQuantity=()=>{
         
-        const newQuantity=  item.quantity-1;
-        const quantity= {newQuantity}
+        const quantity=  item.quantity+1;
+        const newQuantity= {quantity}
+        
      
        
         fetch(`http://localhost:5000/product/${id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'
-
-
-            },body: JSON.stringify(quantity)
+            },
+            body: JSON.stringify(newQuantity)
         })
         .then(res=>res.json())
         .then(data=>{
@@ -41,11 +60,11 @@ const Inventory = () => {
         <h1>Name: {item.name}</h1>
         <h3>Quantity: {item.quantity}</h3>
         <br />
-        <button onClick={handleUpdateQuantity}>Delivered</button>
+        <button onClick={handleDeliveredQuantity}>Delivered</button>
         <br />
         <input type="text" name="" id="" />
         <br />
-        <button>Add</button>
+        <button onClick={handleUpdateQuantity}>Add Quantity</button>
         
     </div>
   )

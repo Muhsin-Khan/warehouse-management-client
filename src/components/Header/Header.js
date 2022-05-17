@@ -17,18 +17,18 @@ const Header = () => {
         <Link to="/"></Link>
         <Link to="/home">Home</Link>
         <Link to="/inventoryItems">Inventory Items</Link>
-        {
-          user && <>
-          <Link to="/addItems">Add Item</Link>
-          <Link to="/manageInventory">Manage Inventory</Link>
-          <Link to="/myItems">My Items</Link>
+        {user && (
+          <>
+            <Link to="/addItems">Add Item</Link>
+            <Link to="/manageInventory">Manage Inventory</Link>
+            <Link to="/myItems">My Items</Link>
           </>
-        }
+        )}
         <Link to="/blogs">Blogs</Link>
         <Link to="/about">Abouts Us</Link>
         {user ? (
           <button
-            className="btn btn-link text-white text-decoration-none ms-0 me-2"
+            className="signOut-button btn btn-link text-white fw-bold text-decoration-none ms-0 me-3 mb-1"
             onClick={handleSignout}
           >
             Sign Out
@@ -36,7 +36,7 @@ const Header = () => {
         ) : (
           <Link to="/login">Login</Link>
         )}
-        <Link to="/signup">Sign Up</Link>
+        {user ? "" : <Link to="/signup">Sign Up</Link>}
       </nav>
     </div>
   );

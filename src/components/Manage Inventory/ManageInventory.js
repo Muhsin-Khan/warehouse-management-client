@@ -25,7 +25,7 @@ const ManageInventory = () => {
   return (
     <div className="container">
       <h2 className="mb-5 mt-4 text-center">Manage your Items/Products here</h2>
-      <div className="add-button">
+      <div className="d-flex justify-content-center align-items-center">
         <Link to="/addItems">
           
           <button className="add-item-button">Add New Items</button>
