@@ -1,0 +1,23 @@
+/* .extraOne{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+} */
+ .extra1-image{
+     border-radius: 7px 7px 0px 0px;
+     
+}
+.extra-child-div{
+    border-radius: 7px;
+    padding: 7px;
+    transition: 0.5s;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 1px 1px 17px rgba(128, 128, 128, 0.603);    
+}
+.extra-child-div:hover{
+    transform: scale(1.05);
+}
+.extra1-text{
+    padding: 7px;
+    margin-top: 15px;
+}

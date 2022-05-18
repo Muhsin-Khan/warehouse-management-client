@@ -9,5 +9,35 @@
     border-radius: 10px;
 }
 .update-item-child{
+    /* color: aqua; */
+}
+.update-quantity-btn{
+    background-color: deepskyblue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 35px;
+    font-weight: 600;
+}
+.update-quantity-btn:hover{
+    background-color: goldenrod;
+}
 
+.deilivered-btn{
+    background-color: green;
+    padding: 5px 80px;
+    border: 0px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+
+}
+.deilivered-btn:hover{
+    background-color: rgb(236, 97, 97);
+    color: black;
+    font-weight: 600;
+}
+.update-item-form{
+    box-shadow: 1px 1px 17px rgba(128, 128, 128, 0.26);
+    border-radius: 7px;
+    padding: 20px;
 }

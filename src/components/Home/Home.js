@@ -2,7 +2,8 @@ import React from "react";
 import "./Home.css";
 import Banner from "../Banner/Banner";
 import { Link } from "react-router-dom";
-import InventoryItems from "../Inventory Items/InventoryItems";
+import Products from "../Products/Products";
+import ExtraOne from "../ExtraOne/ExtraOne";
 // import Services from '../Services/Services'
 
 const Home = () => {
@@ -10,10 +11,10 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <div className="container">
-        <InventoryItems></InventoryItems>
+        <Products></Products>
 
         
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="d-flex justify-content-center align-items-center mt-5 mb-3">
           <Link to="/manageInventory">
             <button className="manage-inventories-button">
               Manage Inventories
@@ -22,6 +23,10 @@ const Home = () => {
           </div>
         
       </div>
+      <div className="d-flex align-items-center container">
+        <div style={{ height: "1px" }} className="seperator-line w-100 mt-5"></div>
+        </div>
+      <ExtraOne></ExtraOne>
     </div>
   );
 };

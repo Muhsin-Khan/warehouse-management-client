@@ -14,7 +14,7 @@ const Products = () => {
       <h1 className="products-title pt-4 pb-1 mt-3 mb-3"> Inventory Items </h1>
       <div className="products">
       {
-        products.map(p => (
+        products.slice(0,4).map(p => (
         
           <Product
           key={p._id}

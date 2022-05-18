@@ -19,10 +19,10 @@ const AboutUs = () => {
                 The <span className="tech-bhandar">Tech Bhandar</span>{" "}
               </h4>
               <p className="tech-bhandar-text">
-                is an world class inventory manage system where we basically
-                store electrical and electronic products and distribute them all
-                over the country door to door for serving people lives city even
-                in rural areas. <br /> <br />
+                is a world class inventory management system whiche basically
+                stores electrical and electronics products and distributes them all
+                over the country door to door for serving people live in city even
+                in rural and urban areas. <br /> <br />
                 In today’s dynamic, omnichannel, fulfillment economy, connected consumers want to buy anywhere, fulfill anywhere, and return anywhere. In order to be able to meet this need, businesses need the ability to respond quickly with warehouse management software that optimizes fulfillment capabilities. <br /> <br /> Our industry-leading, cloud-based warehouse management system prepares you for tomorrow’s supply chain, today. WMS Cloud extends supply chains to align inventory management and fulfillment services with modern purchasing methods, and offers real time visibility into an entire inventory—available via smart phone and browser—the only requirement being access to the Internet.
               </p>
             </div>
@@ -32,7 +32,8 @@ const AboutUs = () => {
         
         {/* Seperator Line */}
         <div className="d-flex align-items-center">
-        <div style={{ height: "1px" }} className="seperator-line w-100 mt-5"></div></div>
+        <div style={{ height: "1px" }} className="seperator-line w-100 mt-5"></div>
+        </div>
         
         {/* Give us feedback */}
         <div className="w-50 mx-auto mt-5">

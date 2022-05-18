@@ -17,7 +17,7 @@ const Inventory = () => {
   const handleDeliveredQuantity = () => {
     const quaNtity = item.quantity - 1;
     if(quaNtity<0){
-        return alert("Hey...!Item is finished already!")
+        return alert("Hey...! Item is finished already!")
     }
     const newQuantity = { quaNtity };
 
@@ -41,7 +41,7 @@ const Inventory = () => {
 
     const quantityNumber = event.target.number.value;
     if(quantityNumber<=0){
-        return alert('Pease input a valid number!')
+        return alert('Please! input a valid number.')
     }
     console.log("checking...", quantityNumber);
     const quaNtity =
@@ -67,36 +67,44 @@ const Inventory = () => {
   return (
     <div className="container">
       <div className="update-item d-flex w-50 mx-auto m-5">
+        
         {/* informatiosn side or left side */}
-        <div className="ms-4 mt-3 mb-3">
-          <h2>{item.name}</h2>
+        
+        <div className="ms-4 mt-3 mb-3 pe-4 w-50">
+          <h4>{item.name}</h4>
           <img className="w-50 mt-2 ps-2 mb-3" src={item.img} alt="" />
           <h5>Quantity: {item.quantity}</h5>
           <h4>Price: ${item.price}</h4>
           <h5>Supplier: {item.supplier}</h5>
           <h6>Item Id: {id}</h6>
         </div>
-        {/* input side or right side */}
-        <div className="me-5 mt-3 mb-3 mx-auto  w-100">
-          <br />
-          <button onClick={handleDeliveredQuantity}>Delivered</button>
-          <br />
+        
+        
+        {/* Input side or right side */}
 
-          <form onSubmit={handleUpdateQuantity}>
-            <h5 className="mb-2 mt-3">Update the Quantity</h5>
+        <div className="me-5 mt-3 pt-5 justify-content-center align-items-center ">
+          <br />
+          <button className="deilivered-btn mb-5" onClick={handleDeliveredQuantity}>Delivered</button>
+          <br />
+          <div className="update-item-form">
+          <form className="" onSubmit={handleUpdateQuantity}>
+            <h5 className="mb-3">Update the Quantity</h5>
             <input
-              className="mb-2"
+              className="mb-2 mt-2"
               placeholder="New Quantity"
               type="number"
               name="number"
             />
             <br />
-            <input className="mb-2" type="submit" value={"Update Quantity"} />
+            <input className="mb-2 mt-2 update-quantity-btn" type="submit" value={"Update Quantity"} />
           </form>
+          </div>
+          
         </div>
       </div>
 
-      {/* Manage Inventory button */}
+      {/* Manage Inventory button to Manage Inventory Route */}
+
       <div className="d-flex justify-content-center align-items-center">
         <Link to="/manageInventory">
           <button className="manage-inventories-button">

@@ -1,14 +1,15 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import auth from "../../firebase.init";
 import "./AddItem.css";
 
 const AddItem = () => {
+  const [user] = useAuthState(auth);
   const {register,handleSubmit} = useForm();
   
   const onSubmit = (data) => {
-    
-  
-  const url = `http://localhost:5000/product`
+  const url = `http://localhost:5000/product`;
   fetch(url, {
     method: 'POST',
     headers: {
@@ -19,12 +20,15 @@ const AddItem = () => {
   .then(res=> res.json())
   .then(result =>{
     console.log(result);
+    alert('Product has been added successfully!')
   })
   }
+  console.log(user)
   return (
     <div className="w-50 mx-auto">
       <h4 className="text-center p-3">Add Product Here</h4>
       <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
+        
         <input className="mb-2" placeholder="Product name" {...register("name")} />
         <textarea
           className="mb-2"
@@ -42,6 +46,14 @@ const AddItem = () => {
           placeholder="Supplier Name"
           type="text"
           {...register("supplier")}
+        />
+        <input
+          className="mb-2"
+          // placeholder="Email"
+          type="email"
+          value={user?.email}
+          disabled
+          {...register("email")}
         />
         <input
           className="mb-2"
