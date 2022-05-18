@@ -1,11 +1,11 @@
 .header{
-    height: 80px;
-    padding-bottom: 10px;
-    padding-top: 25px;
+    height: 60px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     padding-left:50px ;
     background-color: deepskyblue;
 }
-.header nav a{
+.header-nav{
     text-decoration: none;
     margin-right: 20px;
     color: black;
@@ -13,7 +13,7 @@
     font-weight: 700;
     font-size: large;
 }
-.header nav a:hover{
+.header-nav{
     color: white;
     
 

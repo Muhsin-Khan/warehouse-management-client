@@ -5,7 +5,8 @@ import "./AddItem.css";
 const AddItem = () => {
   const {register,handleSubmit} = useForm();
   
-  const onSubmit = (data) => {console.log(data);
+  const onSubmit = (data) => {
+    
   
   const url = `http://localhost:5000/product`
   fetch(url, {
@@ -46,7 +47,7 @@ const AddItem = () => {
           className="mb-2"
           placeholder="Price"
           type="number"
-          {...register("price ")}
+          {...register("price")}
         />
         <input
           className="mb-2"

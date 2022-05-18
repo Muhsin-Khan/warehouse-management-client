@@ -1,0 +1,13 @@
+.item-for-update{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;  
+}
+
+.update-item{
+    border: 1px solid deepskyblue;
+    border-radius: 10px;
+}
+.update-item-child{
+
+}

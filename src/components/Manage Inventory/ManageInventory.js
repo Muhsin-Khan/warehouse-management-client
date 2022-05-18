@@ -24,17 +24,20 @@ const ManageInventory = () => {
 
   return (
     <div className="container">
-      <h2 className="mb-5 mt-4 text-center">Manage your Items/Products here</h2>
+      <h2 className="mb-5 mt-4 text-center">Manage Items/Products</h2>
       <div className="d-flex justify-content-center align-items-center">
         <Link to="/addItems">
           
           <button className="add-item-button">Add New Items</button>
         </Link>
       </div>
+      <div className="d-flex justify-content-center align-items-center mt-5">
+      <h4>Total Items: {products.length} </h4>
+      </div>
 
-      <div className="m-5 manage-item">
+      <div className="mt-2 mb-5 ms-5 me-5 manage-item">
         {products.map((p) => (
-          <dev className="manage-item-child" key={p._id}>
+          <dev className="manage-item-child m-3" key={p._id}>
             <h4 className="pb-3">{p.name}</h4>
             <img className="w-50 mt-2 ps-2 mb-3" src={p.img} alt="" />
             <br />
