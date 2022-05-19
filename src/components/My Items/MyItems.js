@@ -20,7 +20,9 @@ const MyItems = () => {
   }, [user?.email]);
 
   const hendeleDelet = (id) => {
-    const url = `http://localhost:5000/product/${id}`;
+    const proceed = window.confirm("Are you sure you want to delete the item?");
+    if(proceed){
+      const url = `http://localhost:5000/product/${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -29,6 +31,8 @@ const MyItems = () => {
         const remain = items.filter((item) => item._id !== id);
         setItems(remain);
       });
+    }
+    
   };
 
   return (
@@ -46,7 +50,7 @@ const MyItems = () => {
               <h5>Quantity: {item.quantity}</h5>
               <button
                 onClick={() => hendeleDelet(item._id)}
-                className="myItem-delete-button btn-danger"
+                className="myItem-delete-button btn-danger mt-3"
               >
                 Delete{" "}
               </button>
