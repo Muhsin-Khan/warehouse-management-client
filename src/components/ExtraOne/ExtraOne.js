@@ -7,7 +7,7 @@ import ima3 from '../../extra1/3.jpg'
 const ExtraOne = () => {
   return (
     <div className='container'>
-        <h1 className='text-center mt-4' >A Glimpse of Tech Bhandar</h1>
+        <h1 className='text-center mt-4' >A Glimpse of <span className='tech-bhandar-title'>Tech Bhandar</span></h1>
       <div className='row extraOne container d-flex justify-content-center ps-3 pe-3 pb-5 pt-2 mx-auto'>
           <div className='col col-sm col-md-4  extra-child-div'>
               <img className='img-responsive img-fluid extra1-image' src={ima1} alt="" />
