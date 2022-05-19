@@ -88,7 +88,7 @@ const Inventory = () => {
           <br />
           <div className="update-item-form">
           <form className="" onSubmit={handleUpdateQuantity}>
-            <h5 className="mb-3">Update the Quantity</h5>
+            <h5 className="mb-3">Restock the items</h5>
             <input
               className="mb-2 mt-2"
               placeholder="New Quantity"

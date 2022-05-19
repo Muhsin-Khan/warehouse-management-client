@@ -9,6 +9,7 @@ const AddItem = () => {
   const {register,handleSubmit} = useForm();
   
   const onSubmit = (data) => {
+    console.log(data)
   const url = `http://localhost:5000/product`;
   fetch(url, {
     method: 'POST',
@@ -26,7 +27,7 @@ const AddItem = () => {
   console.log(user)
   return (
     <div className="w-50 mx-auto">
-      <h4 className="text-center p-3">Add Product Here</h4>
+      <h4 className="text-center p-3">Add New Items</h4>
       <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
         
         <input className="mb-2" placeholder="Product name" {...register("name")} />
@@ -49,11 +50,10 @@ const AddItem = () => {
         />
         <input
           className="mb-2"
-          // placeholder="Email"
-          type="email"
-          value={user?.email}
-          disabled
-          {...register("email")}
+         placeholder="Email"
+         type="email"
+         setValue={user?.email}
+         {...register ("email")}
         />
         <input
           className="mb-2"

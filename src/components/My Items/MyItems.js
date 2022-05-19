@@ -12,7 +12,8 @@ const MyItems = () => {
     fetch("http://localhost:5000/product")
       .then((res) => res.json())
       .then((data) => {
-        const datas = data.filter((myItem) => myItem.email === user?.email);
+        
+        const datas = data.filter(myItem => myItem.email===user?.email);
 
         setItems(datas);
       });
@@ -37,12 +38,12 @@ const MyItems = () => {
         {items.map((item) => {
           return (
             <div className="myItems-child-dive">
-              <img width="100%" src={items.image} alt="..." />
-              <h3>{items.name}</h3>
-              <h5>Price:{items.price}</h5>
-              <h5>Supplier: {items.supplier}</h5>
-              <h5> Email: {items.email}</h5>
-              <h5>Quantity: {items.quantity}</h5>
+              <img width="100%" src={item.img} alt="alt" />
+              <h3>{item.name}</h3>
+              <h5>Price:{item.price}</h5>
+              <h5>Supplier: {item.supplier}</h5>
+              <h5> Email: {item.email}</h5>
+              <h5>Quantity: {item.quantity}</h5>
               <button
                 onClick={() => hendeleDelet(item._id)}
                 className="myItem-delete-button btn-danger"

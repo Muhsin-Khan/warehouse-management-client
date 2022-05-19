@@ -28,7 +28,8 @@ const ManageInventory = () => {
       <div className="d-flex justify-content-center align-items-center">
         <Link to="/addItems">
           
-          <button className="add-item-button">Add New Items</button>
+          <button  className="add-item-button">Add New Items</button>
+          
         </Link>
       </div>
       <div className="d-flex justify-content-center align-items-center mt-5">
@@ -51,6 +52,7 @@ const ManageInventory = () => {
             >
               Delete Item
             </button>
+            
           </dev>
         ))}
       </div>

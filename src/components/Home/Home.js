@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import { Link } from "react-router-dom";
 import Products from "../Products/Products";
 import ExtraOne from "../ExtraOne/ExtraOne";
+import ExtraTwo from "../ExtraTwo/ExtraTwo";
 // import Services from '../Services/Services'
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <div style={{ height: "1px" }} className="seperator-line w-100 mt-5"></div>
         </div>
       <ExtraOne></ExtraOne>
+      <ExtraTwo></ExtraTwo>
     </div>
   );
 };

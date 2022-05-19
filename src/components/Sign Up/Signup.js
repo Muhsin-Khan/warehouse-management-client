@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import "./Signup.css";
@@ -7,9 +7,12 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 import Loading from "../../Shared/Loading/Loading";
 
 const Signup = () => {
+  
   const [createUserWithEmailAndPassword, user, loading] =
     useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true});
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    
 
   const navigate = useNavigate();
 
@@ -25,14 +28,32 @@ const Signup = () => {
     navigate("/home");
   }
 
+  // const [name, setName] = useState('');
+  //   const [email, setEmail] = useState('');
+  //   const [password, setPassword] = useState('');
+
+  //   setName(Event.target.value)
+  //   setEmail(Event.target.value)
+  //   setPassword(Event.target.value)
+
   const handleSignup = (event) => {
     event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    createUserWithEmailAndPassword(email, password);
+    createUserWithEmailAndPassword(name, email, password);
     console.log(name, email, password)
+    .then(result =>{
+      const user = result.user;
+      console.log('getting...', user)
+      
+    })
+    
+    .catch(error=>{
+      console.error(error)
+    })
+    
   };
   return (
     <div className="signup-form body">
