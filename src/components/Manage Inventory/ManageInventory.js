@@ -9,7 +9,7 @@ const ManageInventory = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete the item?");
     if (proceed) {
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://desolate-taiga-23981.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -27,13 +27,11 @@ const ManageInventory = () => {
       <h2 className="mb-5 mt-4 text-center">Manage Items/Products</h2>
       <div className="d-flex justify-content-center align-items-center">
         <Link to="/addItems">
-          
-          <button  className="add-item-button">Add New Items</button>
-          
+          <button className="add-item-button">Add New Items</button>
         </Link>
       </div>
       <div className="d-flex justify-content-center align-items-center mt-5">
-      <h4>Total Items: {products.length} </h4>
+        <h4>Total Items: {products.length} </h4>
       </div>
 
       <div className="mt-2 mb-5 ms-5 me-5 manage-item">
@@ -52,7 +50,6 @@ const ManageInventory = () => {
             >
               Delete Item
             </button>
-            
           </dev>
         ))}
       </div>

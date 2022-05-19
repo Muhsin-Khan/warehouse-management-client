@@ -9,11 +9,10 @@ const MyItems = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://desolate-taiga-23981.herokuapp.com/product")
       .then((res) => res.json())
       .then((data) => {
-        
-        const datas = data.filter(myItem => myItem.email===user?.email);
+        const datas = data.filter((myItem) => myItem.email === user?.email);
 
         setItems(datas);
       });
@@ -21,18 +20,17 @@ const MyItems = () => {
 
   const hendeleDelet = (id) => {
     const proceed = window.confirm("Are you sure you want to delete the item?");
-    if(proceed){
-      const url = `http://localhost:5000/product/${id}`;
-    fetch(url, {
-      method: "DELETE",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        const remain = items.filter((item) => item._id !== id);
-        setItems(remain);
-      });
+    if (proceed) {
+      const url = `https://desolate-taiga-23981.herokuapp.com/product/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          const remain = items.filter((item) => item._id !== id);
+          setItems(remain);
+        });
     }
-    
   };
 
   return (
