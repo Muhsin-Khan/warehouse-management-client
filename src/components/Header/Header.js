@@ -53,13 +53,12 @@ const Header = () => {
               <Nav.Link as={Link} to="about">
                 About Us
               </Nav.Link>
+              <span className="d-flex justify-content-center align-items-center ms-2 me-1 users-name">{user?.displayName && user?.displayName}</span>
               {user ? (
                 <button
                   className="signOut-button btn btn-link text-white fw-bold text-decoration-none ms-3 me-3 mb-1"
                   onClick={handleSignout}
-                >
-                  Sign Out
-                </button>
+                >Sign Out </button>
               ) : (
                 <Nav.Link as={Link} to="login">
                   Login

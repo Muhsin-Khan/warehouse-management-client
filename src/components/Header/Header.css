@@ -24,3 +24,8 @@
 .signOut-button:hover{
     background-color: lightcoral;
 }
+
+/* Dsiplaying user name with style */
+.users-name{
+    color: rgb(156, 5, 111)
+}
